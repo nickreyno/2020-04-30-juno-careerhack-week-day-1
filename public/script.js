@@ -11,6 +11,7 @@ function submitForm() {
 
   const title = event.target.title.value;
   const description = event.target.description.value;
+  const description2 = event.target.secondDesc.value;
 
   fetch('/api/data', {
     method: 'POST',
