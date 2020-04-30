@@ -17,13 +17,14 @@ module.exports = class DataService {
   }
 
   // Creates an object, then returns the newly created object.
-  create({ title, description }) {
+  create({ title, description,
+  secondDesc }) {
     const id = uuidv4();
 
     const object = {
       id,
       title,
-      description
+      description,
     };
 
     console.log(object);
