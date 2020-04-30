@@ -17,8 +17,7 @@ module.exports = class DataService {
   }
 
   // Creates an object, then returns the newly created object.
-  create({ title, description,
-  secondDesc }) {
+  create({ title, description }) {
     const id = uuidv4();
 
     const object = {
@@ -30,7 +29,6 @@ module.exports = class DataService {
     console.log(object);
 
     this.data[id] = (object);
-
     return Promise.resolve(object);
   }
 

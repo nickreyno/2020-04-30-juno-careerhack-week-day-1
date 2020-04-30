@@ -11,14 +11,13 @@ function submitForm() {
 
   const title = event.target.title.value;
   const description = event.target.description.value;
-  const description2 = event.target.secondDesc.value;
 
   fetch('/api/data', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ title, description, description2 })
+    body: JSON.stringify({ title, description })
   })
   .then(() => fetchAndPrintData());
 
